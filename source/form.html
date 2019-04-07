@@ -29,7 +29,88 @@
     </header>
 
     <main class="page-main">
-
+      <section class="program-form">
+        <h2 class="program-form__title">Подбор программы</h2>
+        <p class="program-form__description">Заполните анкету и мы подберём программу питания для вашего кота</p>
+        <form class="program-form__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="program-form__main-info">
+            <div>
+              <p class="hidden" id="program-form-cat-name-description">Введите имя вашего питомца</p>
+              <label for="program-form-cat-name">Имя:*</label>
+              <input type="text" id="program-form-cat-name" aria-describedby="program-form-cat-name-description" name="cat-name" placeholder="Барсик" required>
+            </div>
+            <div>
+              <p class="hidden" id="program-form-cat-weight-description">Введите вес вашего питомца</p>
+              <label for="program-form-cat-weight">Вес (кг):*</label>
+              <input type="text" id="program-form-cat-weight" aria-describedby="program-form-cat-weight-description" name="cat-weight" placeholder="7" required>
+            </div>
+            <div>
+              <p class="hidden" id="program-form-cat-age-description">Введите возраст вашего питомца</p>
+              <label for="program-form-cat-age">Возраст (лут):</label>
+              <input type="text" id="program-form-cat-age" aria-describedby="program-form-cat-age-description" name="cat-age" placeholder="7">
+            </div>
+          </fieldset>
+          <fieldset class="program-form__select-program">
+            <ul class="program-form__option-list">
+              <li class="program-form__option">
+                <input type="radio" name="program-form-select-program" id="program-form-select-program-slim" class="visually-hidden program-form__radio-button" value="slim">
+                <label for="program-form-select-program-slim">Похудение</label>
+              </li>
+              <li class="program-form__option">
+                <input type="radio" name="program-form-select-program" id="program-form-select-program-increase" class="visually-hidden program-form__radio-button" value="increase">
+                <label for="program-form-select-program-increase">Набор массы</label>
+              </li>
+              <li class="program-form__option">
+                <input type="radio" name="program-form-select-program" id="program-form-select-program-none" class="visually-hidden program-form__radio-button" value="none">
+                <label for="program-form-select-program-none">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program-form__contacts">
+            <legend>Контактные данные (владельца кота)</legend>
+            <div>
+              <p class="hidden" id="program-form-email-description">Введите ваш e-mail</p>
+              <label for="program-form-email">E-mail:*</label>
+              <input type="text" id="program-form-email" aria-describedby="program-form-email-description" name="email" placeholder="kuklachev@gmail.com" required>
+            </div>
+            <div>
+              <p class="hidden" id="program-form-phone-description">Введите ваш телефон</p>
+              <label for="program-form-phone">Телефон:*</label>
+              <input type="text" id="program-form-phone" aria-describedby="program-form-phone-description" name="phone" placeholder="8(960)900-60-90" required>
+            </div>
+          </fieldset>
+          <fieldset class="program-form__comments">
+            <legend>Комментарий</legend>
+            <div>
+              <p class="hidden" id="program-form-comment-description">Комментарий о вашем питомце</p>
+              <textarea id="program-form-comment" aria-describedby="program-form-comment-description" name="comment" placeholder="Расскажите обо всех повадках кота" required></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="program-form__additional">
+            <legend>Дополнительно</legend>
+            <ul class="filter-list">
+              <li class="program-form__option-list">
+                <input type="checkbox" name="additional-fakesugar" id="program-form-additional-fake-sugar" class="visually-hidden rogram-form__checkbox">
+                <label for="program-form-additional-fake-sugar">Сахарозаменитель</label>
+              </li>
+              <li class="program-form__option">
+                <input type="checkbox" name="additional-water" id="program-form-additional-water" class="visually-hidden rogram-form__checkbox">
+                <label for="program-form-additional-water">Питьевая вода</label>
+              </li>
+              <li class="program-form__option">
+                <input type="checkbox" name="additional-milk" id="program-form-additional-milk" class="visually-hidden rogram-form__checkbox">
+                <label for="program-form-additional-milk">Молоко</label>
+              </li>
+              <li class="program-form__option">
+                <input type="checkbox" name="additional-vitamins" id="program-form-additional-vitamins" class="visually-hidden rogram-form__checkbox">
+                <label for="program-form-additional-vitamins">Витамины</label>
+              </li>
+            </ul>
+            <button type="submit" class="program-form__submit">Отправить заявку</button>
+            <p class="program-form__hint">* &ndash; Обязательные поля</p>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
