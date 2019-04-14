@@ -1,3 +1,6 @@
+@import "normalize";
+@import './blocks/body';
+@import './fonts';
 @import './blocks/page-header';
 @import './blocks/main-nav';
 @import './blocks/site-list';
@@ -9,10 +12,12 @@
 @import './blocks/example';
 @import './blocks/page-footer';
 @import './blocks/contacts';
-@import './blocks/social-btn';
+@import './blocks/social';
 @import './blocks/catalog';
 @import './blocks/additional-products';
 @import './blocks/gift';
 @import './blocks/program-form';
-
-body { background: blue; }
+@import './blocks/container';
+@import './blocks/button';
+@import './blocks/hidden';
+@import './blocks/control-toggle';

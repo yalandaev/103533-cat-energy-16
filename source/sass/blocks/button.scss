@@ -1,0 +1,20 @@
+.button {
+  display: block;
+  cursor: pointer;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+
+  &--burger {
+    background: url(../../img/icon-mobile-menu.svg) no-repeat;
+    height: 18px;
+    width: 24px;
+  }
+
+  &--green {
+    background-color: #68b738;
+    color: white;
+    text-decoration: none;
+  }
+}

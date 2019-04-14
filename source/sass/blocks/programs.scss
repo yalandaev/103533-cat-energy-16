@@ -1,0 +1,79 @@
+.programs {
+
+  &__title {
+
+  }
+
+  &__item {
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 40px 20px 20px;
+  }
+
+  &__logo {
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    background: #68b738;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &--slim {
+      width: 35px;
+      height: 50px;
+    }
+
+    &--pro {
+      width: 69px;
+      height: 28px;
+    }
+
+  }
+  &__item-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #111111;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 35px;
+    padding-left: 70px;
+  }
+  &__item-text {
+    font-family: "Arial", "Tahoma", sans-serif;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 20px;
+    margin-bottom: 19px;
+  }
+  &__catalog-link {
+    text-transform: uppercase;
+    padding-right: 10px;
+    font-size: 16px;
+    color: #111111;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -28px;
+      top: 50%;
+      width: 37px;
+      height: 12px;
+      background: url(../../img/icon-right-arrow-verylong.svg) no-repeat center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+  }
+}

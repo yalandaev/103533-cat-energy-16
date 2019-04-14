@@ -1,0 +1,23 @@
+.site-list {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  &__item {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    // margin-left: -20px;
+    // margin-right: -20px;
+
+    a {
+      text-decoration: none;
+      color: #111111;
+    }
+  }
+}
