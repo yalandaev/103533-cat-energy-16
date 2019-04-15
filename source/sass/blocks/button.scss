@@ -17,4 +17,13 @@
     color: white;
     text-decoration: none;
   }
+
+  &--gray {
+    background: #f2f2f2;
+    color: #444444;
+
+    &:hover {
+      background: #ebebeb;
+    }
+  }
 }
