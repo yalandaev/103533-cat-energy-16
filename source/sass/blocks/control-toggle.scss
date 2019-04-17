@@ -1,23 +1,22 @@
 .control-toggle {
-    position: relative;
-    max-width: 84px;
-    width: 100%;
-    height: 14px;
-    border: 1px solid #d9d9d9;
-    border-radius: 50px;
-    background: #ffffff;
+  position: relative;
+  max-width: 84px;
+  width: 100%;
+  height: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  background: #ffffff;
+}
 
-  &__bar::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    right: 5px;
-    width: 35px;
-    height: 6px;
-    border-radius: 50px;
-    background: #68b738;
-    transform: translateY(-50%);
-  }
-
+.control-toggle__bar::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  right: 5px;
+  width: 35px;
+  height: 6px;
+  border-radius: 50px;
+  background: #68b738;
+  transform: translateY(-50%);
 }

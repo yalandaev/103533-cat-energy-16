@@ -1,42 +1,36 @@
-.contacts {
+// .contacts {}
 
+&__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  line-height: 21px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
 
-  &__text {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    line-height: 21px;
-    font-family: "Arial", "Tahoma", sans-serif;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
+&__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  line-height: 20px;
+  flex: 0 0 50%;
+  margin: 0;
+  text-transform: uppercase;
+  max-width: 160px;
+}
 
-  }
-
-  &__subtitle {
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Oswald", "Arial", sans-serif;
-    color: #111111;
-    line-height: 20px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    margin: 0;
-    text-transform: uppercase;
-    max-width: 160px;
-  }
-
-  &__address {
-    flex: 0 0 50%;
-    margin: 0;
-    line-height: 21px;
-    max-width: 160px;
-    width: 100%;
-    font-family: "Arial", "Tahoma", sans-serif;
-    font-style: normal;
-  }
-
+&__address {
+  flex: 0 0 50%;
+  margin: 0;
+  line-height: 21px;
+  max-width: 160px;
+  width: 100%;
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-style: normal;
 }

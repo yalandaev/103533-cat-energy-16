@@ -1,69 +1,67 @@
-.how-works {
+// .how-works {}
 
+.how-works__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  color: #111111;
+  margin-bottom: 40px;
+  margin-top: 0;
+  padding-top: 28px;
+}
 
-  &__title {
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 1;
-    color: #111111;
-    margin-bottom: 40px;
-    margin-top: 0;
-    padding-top: 28px;
-  }
+.how-works__list {
+  list-style-type: none;
+  padding: 0;
+}
 
-  &__list {
-    list-style-type: none;
-    padding: 0;
-  }
+.how-works__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.how-works__logo {
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-right: 20px;
 
-  &__logo {
-    background-color: #68b738;
+  &::before {
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
     width: 60px;
     height: 60px;
     display: block;
-    margin-right: 20px;
+  }
 
+  &--leaf {
     &::before {
-      content: '';
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 60px;
-      height: 60px;
-      display: block;
-    }
-
-    &--leaf {
-      &::before {
-        background-image: url(../../img/advantage-leaf@1x.png);
-      }
-    }
-
-    &--form {
-      &::before {
-        background-image: url(../../img/advantage-powder@1x.png);
-      }
-    }
-
-    &--tools {
-      &::before {
-        background-image: url(../../img/advantage-dining@1x.png);
-      }
-    }
-
-    &--clock {
-      &::before {
-        background-image: url(../../img/advantage-clock@1x.png)
-      }
+      background-image: url("../../img/advantage-leaf@1x.png");
     }
   }
 
-  &__text {
-    font-family: "Arial", "Tahoma", sans-serif;
+  &--form {
+    &::before {
+      background-image: url("../../img/advantage-powder@1x.png");
+    }
   }
+
+  &--tools {
+    &::before {
+      background-image: url("../../img/advantage-dining@1x.png");
+    }
+  }
+
+  &--clock {
+    &::before {
+      background-image: url("../../img/advantage-clock@1x.png");
+    }
+  }
+}
+
+.how-works__text {
+  font-family: "Arial", "Tahoma", sans-serif;
 }
