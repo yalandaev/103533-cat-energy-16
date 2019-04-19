@@ -8,6 +8,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var svgSprite = require('gulp-svg-sprite');
 var server = require("browser-sync").create();
+const filter = require('gulp-filter');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -24,6 +25,14 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+// var excludeIconArray = ["sprite.svg"];
+// const svgFilter = filter(file => {
+//   return !excludeIconArray.includes(file.path)
+// });
+    // .pipe(filter(file => {
+    //   return !excludeIconArray.includes(file.path)
+    // }))
+
 gulp.task('svgsprite', function () {
   return gulp.src('source/img/*.svg') // svg files for sprite
     .pipe(svgSprite({
@@ -34,7 +43,7 @@ gulp.task('svgsprite', function () {
       },
     }
     ))
-    .pipe(gulp.dest('source/img/'));
+    .pipe(gulp.dest('source/img/sprites'));
 });
 
 gulp.task("server", function () {

@@ -1,6 +1,6 @@
-@import "normalize";
-@import "./blocks/body";
+@import "./reset";
 @import "./fonts";
+@import "./blocks/body";
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/site-list";
@@ -21,3 +21,4 @@
 @import "./blocks/button";
 @import "./blocks/hidden";
 @import "./blocks/control-toggle";
+@import "./mixins/mixins";
