@@ -13,14 +13,14 @@
   }
 
   &--green {
-    background-color: #68b738;
+    background-color: $color-main;
     color: white;
     text-decoration: none;
   }
 
   &--gray {
-    background: #f2f2f2;
-    color: #444444;
+    background: $gray-light;
+    color: $gray;
 
     &:hover {
       background: #ebebeb;

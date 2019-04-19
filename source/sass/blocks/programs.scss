@@ -3,7 +3,7 @@
 // .programs__title {}
 
 .programs__item {
-  background-color: #f2f2f2;
+  background-color: $gray-light;
   margin-bottom: 20px;
   position: relative;
   padding: 40px 20px 20px;
@@ -13,7 +13,7 @@
   top: 25px;
   width: 50px;
   height: 50px;
-  background: #68b738;
+  background: $color-main;
   border-radius: 50%;
   position: absolute;
 }
@@ -41,7 +41,7 @@
   font-size: $font-big;
   line-height: 1;
   font-family: $main-font;
-  color: #111111;
+  color: $color-font;
   position: relative;
   margin-top: 0;
   margin-bottom: 35px;
@@ -59,7 +59,7 @@
   text-transform: uppercase;
   padding-right: 10px;
   font-size:$font-medium;
-  color: #111111;
+  color: $color-font;
   position: relative;
 
   &::after {

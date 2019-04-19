@@ -1,5 +1,5 @@
 .example {
-  background: #f2f2f2;
+  background: $gray-light;
 }
 
 .example__title {
@@ -7,7 +7,7 @@
   font-size: $font-huge;
   font-weight: 400;
   line-height: 1;
-  color: #111111;
+  color: $color-font;
   margin-bottom: 40px;
   margin-top: 0;
   padding-top: 28px;
@@ -44,14 +44,14 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -20px;
-  background: #f2f2f2;
+  background: $gray-light;
 }
 
 .example__block-title {
   font-size: $font-big;
   font-weight: 400;
   text-transform: uppercase;
-  color: #111111;
+  color: $color-font;
   margin: 0;
 }
 
@@ -59,7 +59,7 @@
   font-size: $font-small;
   line-height: 1;
   margin: 8px 0 0;
-  color: #111111;
+  color: $color-font;
   font-family: $secondary-font;
   width: 80px;
 }
@@ -70,7 +70,7 @@
   text-transform: uppercase;
   margin-bottom: 35px;
   margin-top: 0;
-  color: #111111;
+  color: $color-font;
 }
 
 // .example__slider {}
@@ -93,7 +93,7 @@
   text-transform: uppercase;
   font-size: $font-medium;
   cursor: pointer;
-  color: #111111;
+  color: $color-font;
 }
 
 // .example__toggle {}

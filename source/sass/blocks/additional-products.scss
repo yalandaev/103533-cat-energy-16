@@ -39,7 +39,7 @@
   font-size: $font-big;
   line-height: 1;
   font-family: $main-font;
-  color: #111111;
+  color: $color-font;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -57,7 +57,7 @@
     width: 100vw;
     height: 3px;
     margin-top: 2px;
-    background: #68b738;
+    background: $color-main;
     z-index: -1;
   }
 }
