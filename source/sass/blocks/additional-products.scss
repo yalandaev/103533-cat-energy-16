@@ -4,8 +4,7 @@
 }
 
 .additional-products__list {
-  list-style: none;
-  padding: 0;
+  @include list-reset;
 }
 
 .additional-products__item {

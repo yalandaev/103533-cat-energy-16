@@ -25,20 +25,12 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-// var excludeIconArray = ["sprite.svg"];
-// const svgFilter = filter(file => {
-//   return !excludeIconArray.includes(file.path)
-// });
-    // .pipe(filter(file => {
-    //   return !excludeIconArray.includes(file.path)
-    // }))
-
 gulp.task('svgsprite', function () {
-  return gulp.src('source/img/*.svg') // svg files for sprite
+  return gulp.src('source/img/*.svg')
     .pipe(svgSprite({
       mode: {
         stack: {
-          sprite: "../sprite.svg"  //sprite file name
+          sprite: "../sprite.svg"
         }
       },
     }

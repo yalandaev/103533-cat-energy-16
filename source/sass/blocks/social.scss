@@ -1,6 +1,5 @@
 .social {
-  list-style-type: none;
-  margin: 0;
+  @include list-reset;
   display: flex;
   align-items: center;
   justify-content: center;

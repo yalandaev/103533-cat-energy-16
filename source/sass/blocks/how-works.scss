@@ -11,8 +11,7 @@
 }
 
 .how-works__list {
-  list-style-type: none;
-  padding: 0;
+  @include list-reset;
 }
 
 .how-works__item {
