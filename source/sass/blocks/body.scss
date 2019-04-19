@@ -1,0 +1,14 @@
+body {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: $main-font;
+  line-height: 18px;
+  color: $gray;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+
+  a {
+    text-decoration: none;
+  }
+}

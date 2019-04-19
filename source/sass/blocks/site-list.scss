@@ -1,0 +1,19 @@
+.site-list {
+  @include list-reset;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: $main-font;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.site-list__item {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  a {
+    text-decoration: none;
+    color: $color-font;
+  }
+}
