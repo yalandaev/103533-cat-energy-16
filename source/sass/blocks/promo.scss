@@ -1,6 +1,6 @@
 .promo {
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   color: white;
   text-align: center;
   padding-top: 25px;
@@ -9,7 +9,7 @@
 
 .promo__title {
   font-weight: 400;
-  font-size: 36px;
+  font-size: $font-huge;
   line-height: 1;
 }
 

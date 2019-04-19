@@ -38,9 +38,9 @@
 .programs__item-title {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 24px;
+  font-size: $font-big;
   line-height: 1;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   color: #111111;
   position: relative;
   margin-top: 0;
@@ -49,7 +49,7 @@
 }
 
 .programs__item-text {
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $secondary-font;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 20px;
   margin-bottom: 19px;
@@ -58,7 +58,7 @@
 .programs__catalog-link {
   text-transform: uppercase;
   padding-right: 10px;
-  font-size: 16px;
+  font-size:$font-medium;
   color: #111111;
   position: relative;
 

@@ -32,9 +32,9 @@
 
 .page-footer__link {
   display: inline-block;
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $secondary-font;
   color: #444444;
-  font-size: 16px;
+  font-size: $font-medium;
 }
 
 // .page-footer__logo {}

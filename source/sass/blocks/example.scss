@@ -3,8 +3,8 @@
 }
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
+  font-family: $main-font;
+  font-size: $font-huge;
   font-weight: 400;
   line-height: 1;
   color: #111111;
@@ -14,7 +14,7 @@
 }
 
 .example__text {
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $main-font;
   margin-bottom: 25px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .example__block-title {
-  font-size: 23px;
+  font-size: $font-big;
   font-weight: 400;
   text-transform: uppercase;
   color: #111111;
@@ -56,16 +56,16 @@
 }
 
 .example__block-subtitle {
-  font-size: 12px;
+  font-size: $font-small;
   line-height: 1;
   margin: 8px 0 0;
   color: #111111;
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $secondary-font;
   width: 80px;
 }
 
 .example__spendings {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 35px;
@@ -91,7 +91,7 @@
   background: transparent;
   border: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: $font-medium;
   cursor: pointer;
   color: #111111;
 }

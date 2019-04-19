@@ -4,9 +4,9 @@
 
 .catalog__title {
   font-weight: 400;
-  font-size: 36px;
+  font-size: $font-huge;
   line-height: 1;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   color: #111111;
   margin-bottom: 40px;
   margin-top: 0;
@@ -65,9 +65,9 @@
 }
 
 .catalog__item-title {
-  font-size: 16px;
+  font-size: $font-medium;
   font-weight: 400;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   color: #111111;
   max-width: 100px;
   margin-top: 20px;
@@ -80,9 +80,9 @@
   width: 100%;
   padding: 0;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: $font-small;
   line-height: 16px;
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $secondary-font;
 }
 
 // .catalog__spec-field {}
@@ -92,7 +92,7 @@
 // .catalog__plus {}
 
 .catalog__show-all-descr {
-  font-size: 12px;
+  font-size: $font-small;
   margin-bottom: 23px;
 }
 

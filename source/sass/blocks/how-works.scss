@@ -1,7 +1,7 @@
 // .how-works {}
 
 .how-works__title {
-  font-size: 36px;
+  font-size: $font-huge;
   font-weight: 400;
   line-height: 1;
   color: #111111;
@@ -62,5 +62,5 @@
 }
 
 .how-works__text {
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $secondary-font;
 }
