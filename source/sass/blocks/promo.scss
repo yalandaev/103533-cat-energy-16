@@ -24,3 +24,41 @@
 }
 
 // .promo__button {}
+@media (min-width: 320px) {
+}
+@media (min-width: 768px) {
+  .promo {
+    background: none;
+    color: black;
+    text-align: left;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    padding-left: 90px;
+    min-height: 940px;
+  }
+  .promo__title {
+    max-width: 520px;
+    margin-bottom: 45px;
+    font-size: 60px;
+  }
+  .promo__subtitle {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 45px;
+  }
+  .promo__image {
+    position: absolute;
+    left: 0;
+    top: 210px;
+    z-index: -1;
+    width: 620px;
+  }
+  .promo__button.button {
+    font-size: 20px;
+    width: auto;
+    padding: 16px 27px;
+    display: inline-block;
+  }
+}
+@media (min-width: 1440px) {
+}
