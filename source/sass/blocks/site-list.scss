@@ -1,30 +1,28 @@
-@media (min-width: 320px) {
-  .site-list {
-    @include list-reset;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: $main-font;
-    text-transform: uppercase;
-    text-align: center;
+.site-list {
+  @include list-reset;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: $main-font;
+  text-transform: uppercase;
+  text-align: center;
 
-    &--no-background {
-      a {
-        color: black;
-      }
+  &--no-background {
+    a {
+      color: black;
     }
   }
+}
 
-  .site-list__item {
-    border-top: 1px solid #e6e6e6;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-left: -25px;
-    margin-right: -25px;
+.site-list__item {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: -25px;
+  margin-right: -25px;
 
-    a {
-      text-decoration: none;
-      color: $color-font;
-    }
+  a {
+    text-decoration: none;
+    color: $color-font;
   }
 }
 
@@ -43,7 +41,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .site-list__item {
     a {
       text-decoration: none;

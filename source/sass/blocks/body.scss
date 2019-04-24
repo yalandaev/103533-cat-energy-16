@@ -1,26 +1,30 @@
-@media (min-width: 320px) {
-  body {
-    font-weight: 400;
-    font-size: 14px;
-    font-family: $main-font;
-    line-height: 18px;
-    color: $gray;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+html {
+  box-sizing: border-box;
+}
 
-    a {
-      text-decoration: none;
-    }
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  img {
-    width: 100%;
-  }
+body {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: $main-font;
+  line-height: 18px;
+  color: $gray;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 
-  * {
-    box-sizing: border-box;
+  a {
+    text-decoration: none;
   }
+}
+
+img {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -29,5 +33,5 @@
     line-height: 24px;
   }
 }
-// @media (min-width: 1440px) {
+// @media (min-width: 1300px) {
 // }
