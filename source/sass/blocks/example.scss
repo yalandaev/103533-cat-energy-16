@@ -1,5 +1,6 @@
 .example {
   background: $gray-light;
+  padding-bottom: 20px;
 }
 
 .example__title {
@@ -8,7 +9,7 @@
   font-weight: 400;
   line-height: 1;
   color: $color-font;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   margin-top: 0;
   padding-top: 28px;
 }
@@ -17,6 +18,8 @@
   font-family: $secondary-font;
   margin-bottom: 25px;
   font-weight: 200;
+  padding-right: 10px;
+  margin-top: 0;
 }
 
 .example__blocks {
@@ -77,7 +80,8 @@
 // .example__slider {}
 
 .example__img {
-  width: 100%;
+  width: 120%;
+  margin-left: -25px;
 }
 
 .example__toggle-block {
