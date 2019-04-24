@@ -1,41 +1,39 @@
 .gift {
   padding: 20px 20px;
+}
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: url("../img/gift-photo-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $color-main;
-    background-size: cover;
-    align-items: center;
-    min-height: 290px;
-    width: 100%;
-    padding: 50px 10px;
-    text-align: center;
-    color: #ffffff;
-    box-sizing: border-box;
+.gift__text {
+  max-width: 150px;
+  margin: 0;
+  line-height: 20px;
+  font-family: $secondary-font;
+}
 
-    svg {
-      fill: white;
-    }
-  }
+.gift__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-main;
+  background-size: cover;
+  align-items: center;
+  min-height: 290px;
+  width: 100%;
+  padding: 50px 10px;
+  text-align: center;
+  color: #ffffff;
+  box-sizing: border-box;
 
-  // &__image {  }
-
-  &__text {
-    max-width: 150px;
-    margin: 0;
-    line-height: 20px;
-    font-family: $secondary-font;
+  svg {
+    fill: white;
   }
 }
 
-@media (min-width: 320px) {
-}
-@media (min-width: 768px) {
-}
-@media (min-width: 1440px) {
-}
+// @media (min-width: 320px) {
+// }
+// @media (min-width: 768px) {
+// }
+// @media (min-width: 1440px) {
+// }

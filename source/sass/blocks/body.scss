@@ -1,35 +1,33 @@
-body {
+@media (min-width: 320px) {
+  body {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: $main-font;
+    line-height: 18px;
+    color: $gray;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 
-  font-weight: 400;
-  font-size: 14px;
-  font-family: $main-font;
-  line-height: 18px;
-  color: $gray;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-
-  a {
-    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
   }
 
-}
-img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-@media (min-width: 320px) {
-}
 @media (min-width: 768px) {
   body {
     font-size: 16px;
     line-height: 24px;
   }
 }
-@media (min-width: 1440px) {
-}
-
+// @media (min-width: 1440px) {
+// }

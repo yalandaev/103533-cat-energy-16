@@ -1,10 +1,9 @@
-
-
 @media (min-width: 320px) {
   .main-nav {
     width: 100%;
   }
 }
+
 @media (min-width: 768px) {
   .main-nav {
     width: inherit;
@@ -12,5 +11,6 @@
     align-items: center;
   }
 }
-@media (min-width: 1440px) {
-}
+
+// @media (min-width: 1440px) {
+// }
