@@ -10,6 +10,7 @@
   margin-bottom: 32px;
   margin-top: 0;
   padding-top: 28px;
+  padding-left: 20px;
 }
 
 .how-works__list {
@@ -23,6 +24,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .how-works__logo {
@@ -75,11 +78,14 @@
 @media (min-width: 768px) {
   .how-works__title {
     font-size: 60px;
+    padding-top: 44px;
+    padding-left: 30px;
   }
 
   .how-works__list {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 41px;
   }
 
   .how-works__item {
@@ -88,7 +94,10 @@
     align-items: center;
     width: 50%;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 116px;
+    flex-basis: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
 
     &::after {
       content: "1";
@@ -98,8 +107,8 @@
       font-family: "Oswald", "Arial", sans-serif;
       color: #f2f2f2;
       z-index: -1;
-      left: 140px;
-      top: -35px;
+      left: 149px;
+      top: -40px;
     }
   }
 
@@ -117,6 +126,7 @@
     font-size: 16px;
     line-height: 24px;
     max-width: 250px;
+    padding-top: 33px;
   }
 }
 
