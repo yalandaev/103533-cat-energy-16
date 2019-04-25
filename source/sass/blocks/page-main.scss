@@ -1,5 +1,50 @@
-// //
-// @media (min-width: 768px) {
-// }
-// @media (min-width: 1300px) {
-// }
+.page-main {
+  position: relative;
+  &::after {
+    content: "";
+    background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+    background-position: 100% 0%;
+    background-size: 100%;
+    width: 100%;
+    height: 306px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #63a73a;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    position: initial;
+    &::after {
+      content: "";
+      background: none;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-main {
+    &::after {
+      content: "";
+      background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+      background-position: 100% 0%;
+      background-size: 100%;
+      width: 50%;
+      height: 696px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #63a73a;
+      background-position: 0%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

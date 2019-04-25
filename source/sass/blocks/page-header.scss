@@ -33,5 +33,15 @@
   }
 }
 
-// @media (min-width: 1300px) {
-// }
+@media (min-width: 1300px) {
+  .page-header__container {
+    padding-top: 38px;
+  }
+  .page-header__logo {
+    max-width: 210px;
+    width: 202px;
+    height: 77px;
+  }
+  .page-header__logo-image {
+  }
+}

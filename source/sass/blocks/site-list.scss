@@ -42,7 +42,12 @@
 }
 
 @media (min-width: 1300px) {
+  .site-list {
+    font-size: 20px;
+  }
+
   .site-list__item {
+    padding-top: 35px;
     a {
       text-decoration: none;
       color: white;
