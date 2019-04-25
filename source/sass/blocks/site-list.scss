@@ -5,15 +5,53 @@
   font-family: $main-font;
   text-transform: uppercase;
   text-align: center;
+
+  &--no-background {
+    a {
+      color: black;
+    }
+  }
 }
 
 .site-list__item {
   border-top: 1px solid #e6e6e6;
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-left: -25px;
+  margin-right: -25px;
 
   a {
     text-decoration: none;
     color: $color-font;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-list__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+    border: 0;
+    margin: 0;
+  }
+
+  .site-list {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1300px) {
+  .site-list__item {
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .site-list--no-background .site-list__item {
+    a {
+      color: black;
+    }
   }
 }

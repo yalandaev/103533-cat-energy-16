@@ -1,6 +1,4 @@
-.page-header {
-  background-color: white;
-}
+// .page-header {}
 
 .page-header__container {
   display: flex;
@@ -8,7 +6,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px;
 }
 
 .page-header__logo {
@@ -20,3 +17,14 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+@media (min-width: 768px) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+// @media (min-width: 1300px) {
+// }

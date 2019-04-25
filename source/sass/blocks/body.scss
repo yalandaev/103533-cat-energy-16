@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-weight: 400;
   font-size: 14px;
@@ -12,3 +22,16 @@ body {
     text-decoration: none;
   }
 }
+
+img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+// @media (min-width: 1300px) {
+// }

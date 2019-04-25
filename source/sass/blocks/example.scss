@@ -14,8 +14,9 @@
 }
 
 .example__text {
-  font-family: $main-font;
+  font-family: $secondary-font;
   margin-bottom: 25px;
+  font-weight: 200;
 }
 
 .example__blocks {
@@ -95,5 +96,21 @@
   cursor: pointer;
   color: $color-font;
 }
-
 // .example__toggle {}
+
+
+@media (min-width: 768px) {
+  .example__title {
+    font-family: $main-font;
+    font-size: 60px;
+  }
+
+  .example__blocks {
+    max-width: 365px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+// @media (min-width: 1300px) {
+// }

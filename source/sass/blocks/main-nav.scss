@@ -1,3 +1,14 @@
 .main-nav {
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: inherit;
+    display: flex;
+    align-items: center;
+  }
+}
+
+// @media (min-width: 1300px) {
+// }

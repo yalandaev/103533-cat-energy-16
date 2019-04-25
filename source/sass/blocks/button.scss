@@ -27,3 +27,14 @@
     }
   }
 }
+
+
+@media (min-width: 768px) {
+  .button {
+    &--burger {
+      display: none;
+    }
+  }
+}
+// @media (min-width: 1300px) {
+// }
