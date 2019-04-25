@@ -1,6 +1,6 @@
 .example {
   background: $gray-light;
-  padding-bottom: 20px;
+  padding-bottom: 38px;
 }
 
 .example__title {
@@ -62,7 +62,7 @@
 .example__block-subtitle {
   font-size: $font-small;
   line-height: 1;
-  margin: 8px 0 0;
+  margin: 14px 0 0;
   color: $color-font;
   font-family: $secondary-font;
   width: 80px;
@@ -80,14 +80,17 @@
 // .example__slider {}
 
 .example__img {
-  width: 120%;
-  margin-left: -25px;
+  width: 114%;
+  margin-left: -19px;
 }
 
 .example__toggle-block {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding-top: 29px;
+  padding-left: 44px;
+  padding-right: 39px;
+  align-items: flex-end;
 }
 
 .example__slider-button {
