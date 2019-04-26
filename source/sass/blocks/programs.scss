@@ -81,7 +81,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .programs__logo {
     right: 60px;
     top: 90px;
@@ -132,7 +132,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .programs__item {
     padding: 77px 50px 60px 50px;
     width: 570px;

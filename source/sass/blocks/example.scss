@@ -106,7 +106,7 @@
 // .example__toggle {}
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .example__title {
     font-family: $main-font;
     font-size: 60px;
@@ -123,7 +123,7 @@
     margin-top: -30px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .example {
     margin-top: 0;
   }

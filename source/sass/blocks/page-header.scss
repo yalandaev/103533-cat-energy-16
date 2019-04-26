@@ -20,7 +20,7 @@
   padding-top: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-header {
     display: flex;
     flex-direction: row;
@@ -30,10 +30,11 @@
   .page-header__logo {
     height: 65px;
     width: 173px;
+    padding-top: 6px;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .page-header__container {
     padding-top: 38px;
   }
@@ -41,6 +42,7 @@
     max-width: 210px;
     width: 202px;
     height: 77px;
+    padding-top: 3px;
   }
   .page-header__logo-image {
   }

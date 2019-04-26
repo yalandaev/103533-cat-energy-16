@@ -76,7 +76,7 @@
   padding-top: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .how-works {
     margin-bottom: 0;
   }
@@ -113,7 +113,7 @@
       font-family: "Oswald", "Arial", sans-serif;
       color: #f2f2f2;
       z-index: -1;
-      left: 149px;
+      left: 157px;
       top: -40px;
     }
   }
@@ -136,7 +136,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .how-works__list {
     flex-wrap: nowrap;
     margin-left: -40px;

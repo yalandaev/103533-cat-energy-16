@@ -28,13 +28,13 @@
 
 // .promo__button {}
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo {
     background: none;
     color: black;
     text-align: left;
-    padding-top: 45px;
-    margin-bottom: 20px;
+    padding-top: 60px;
+    margin-bottom: 35px;
     padding-left: 88px;
     min-height: 838px;
   }
@@ -68,12 +68,12 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .promo {
     min-height: 470px;
     padding-left: 80px;
-    padding-top: 97px;
-    margin-bottom: 184px;
+    padding-top: 104px;
+    margin-bottom: 191px;
 
     &::after {
       content: "";
@@ -82,8 +82,8 @@
   }
 
   .promo__image {
-    left: 262px;
-    top: 25px;
+    left: 290px;
+    top: 26px;
     z-index: 0;
     width: 515px;
   }

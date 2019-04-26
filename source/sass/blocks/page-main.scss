@@ -1,5 +1,8 @@
 .page-main {
   position: relative;
+}
+
+.page-main--with-background {
   &::after {
     content: "";
     background: url("../img/index-background-mobile@1x.jpg") no-repeat;
@@ -18,9 +21,11 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-main {
     position: initial;
+  }
+  .page-main--with-background {
     &::after {
       content: "";
       background: none;
@@ -28,8 +33,8 @@
   }
 }
 
-@media (min-width: 1300px) {
-  .page-main {
+@media (min-width: $desktop-width) {
+  .page-main--with-background {
     &::after {
       content: "";
       background: url("../img/index-background-mobile@1x.jpg") no-repeat;

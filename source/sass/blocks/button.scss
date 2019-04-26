@@ -29,12 +29,12 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .button {
     &--burger {
       display: none;
     }
   }
 }
-// @media (min-width: 1300px) {
+// @media (min-width: $desktop-width) {
 // }
