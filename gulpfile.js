@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+const webp = require('gulp-webp');
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
@@ -38,6 +39,19 @@ gulp.task('svgsprite', function () {
     .pipe(gulp.dest('source/img/sprites'));
 });
 
+gulp.task('webp-png', () =>
+  gulp.src('source/img/*.png')
+    .pipe(webp({ quality: 80, lossless: true }))
+    .pipe(gulp.dest('source/img/webp'))
+);
+
+gulp.task('webp-jpg', () =>
+  gulp.src('source/img/*.jpg')
+    .pipe(webp({ quality: 80, lossless: true }))
+    .pipe(gulp.dest('source/img/webp'))
+);
+//webp options: https://github.com/imagemin/imagemin-webp#imageminwebpoptions
+
 gulp.task("server", function () {
   server.init({
     server: "source/",
@@ -51,4 +65,4 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "svgsprite", "server"));
+gulp.task("start", gulp.series("css", "svgsprite", "webp-png", "webp-jpg", "server"));
