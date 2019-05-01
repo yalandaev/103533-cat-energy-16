@@ -39,18 +39,18 @@ gulp.task('svgsprite', function () {
     .pipe(gulp.dest('source/img/sprites'));
 });
 
-gulp.task('webp-png', () =>
-  gulp.src('source/img/*.png')
-    .pipe(webp({ quality: 80, lossless: true }))
-    .pipe(gulp.dest('source/img/webp'))
-);
+// gulp.task('webp-png', () =>
+//   gulp.src('source/img/*.png')
+//     .pipe(webp({ quality: 80, lossless: true }))
+//     .pipe(gulp.dest('source/img/webp'))
+// );
 
-gulp.task('webp-jpg', () =>
-  gulp.src('source/img/*.jpg')
-    .pipe(webp({ quality: 80, lossless: true }))
-    .pipe(gulp.dest('source/img/webp'))
-);
-//webp options: https://github.com/imagemin/imagemin-webp#imageminwebpoptions
+// gulp.task('webp-jpg', () =>
+//   gulp.src('source/img/*.jpg')
+//     .pipe(webp({ quality: 80, lossless: true }))
+//     .pipe(gulp.dest('source/img/webp'))
+// );
+// //webp options: https://github.com/imagemin/imagemin-webp#imageminwebpoptions
 
 gulp.task("server", function () {
   server.init({
@@ -65,4 +65,4 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "svgsprite", "webp-png", "webp-jpg", "server"));
+gulp.task("start", gulp.series("css", "svgsprite", "server"));
