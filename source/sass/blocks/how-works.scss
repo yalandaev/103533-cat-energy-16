@@ -106,7 +106,8 @@
     padding-right: 30px;
 
     &::after {
-      content: "1";
+      counter-increment: how-works-counter;
+      content: counter(how-works-counter);
       position: absolute;
       font-size: 280px;
       line-height: 1;

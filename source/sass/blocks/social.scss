@@ -9,9 +9,13 @@
   border-bottom: 1px solid #d9d9d9;
   width: 100%;
 
-  & li {
+  li {
     margin-left: 14px;
     margin-right: 25px;
+  }
+
+  .social__icon {
+    fill: #666666;
   }
 
   // &__button {
@@ -34,7 +38,35 @@
 
   // }
 }
-// @media (min-width: $tablet-width) {
-// }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border-top: 0;
+    border-bottom: 0;
+    padding-top: 18px;
+
+    li {
+      margin-left: 7px;
+      margin-right: 21px;
+    }
+  }
+
+  .social__icon {
+    &--vk {
+      width: 31px;
+      height: 19px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}
 // @media (min-width: $desktop-width) {
 // }

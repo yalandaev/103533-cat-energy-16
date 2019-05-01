@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  counter-reset: how-works-counter;
 }
 
 ::-webkit-scrollbar {
@@ -28,7 +29,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 @media (min-width: $tablet-width) {
