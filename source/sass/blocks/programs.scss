@@ -7,6 +7,10 @@
   margin-bottom: 20px;
   position: relative;
   padding: 40px 20px 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .programs__logo {
@@ -61,6 +65,8 @@
   font-size: $font-medium;
   color: $color-font;
   position: relative;
+  background: #f2f2f2;
+  z-index: 1;
 
   &::after {
     content: "";
@@ -71,11 +77,11 @@
     height: 12px;
     background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
     transform: translateY(-50%);
-    transition: 0.3s;
+    z-index: -1;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .programs__logo {
     right: 60px;
     top: 90px;
@@ -92,11 +98,14 @@
   .programs__item-text {
     padding-bottom: 27px;
     margin-bottom: 27px;
+    margin-top: 0;
     border: none;
   }
 
   .programs__item {
-    padding: 80px 320px 60px 50px;
+    padding: 77px 315px 59px 52px;
+    height: 372px;
+    margin-bottom: 30px;
   }
 
   .programs__catalog-link {
@@ -123,16 +132,34 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .programs__item {
-    padding: 80px 320px 60px 50px;
+    padding: 77px 50px 60px 50px;
     width: 570px;
     display: inline-block;
+  }
+
+  .programs__item-text {
+    margin-bottom: 29px;
+    margin-top: 0;
+    padding-bottom: 0;
   }
 
   .programs__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .programs__logo {
+    left: 51px;
+    top: 46px;
+    width: 101px;
+    height: 101px;
+  }
+
+  .programs__item-title {
+    margin-left: 164px;
+    margin-bottom: 75px;
   }
 }

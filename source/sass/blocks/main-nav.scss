@@ -2,13 +2,17 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-nav {
     width: inherit;
     display: flex;
     align-items: center;
+    padding-top: 21px;
   }
 }
 
-// @media (min-width: 1300px) {
-// }
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding-top: 0;
+  }
+}

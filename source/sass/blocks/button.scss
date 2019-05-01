@@ -10,6 +10,7 @@
     background: url("../img/icon-mobile-menu.svg") no-repeat;
     height: 18px;
     width: 24px;
+    padding: 9px 12px;
   }
 
   &--green {
@@ -29,12 +30,14 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .button {
+    line-height: 18px;
+
     &--burger {
       display: none;
     }
   }
 }
-// @media (min-width: 1300px) {
+// @media (min-width: $desktop-width) {
 // }

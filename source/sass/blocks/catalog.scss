@@ -19,17 +19,29 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  margin-bottom: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: 0;
+    bottom: -24px;
+    height: 1px;
+    background: #d9d9d9;
+    width: calc(100% + 40px);
+  }
 
   &--show-all {
     position: relative;
-    margin-top: 77px;
+    margin-top: 82px;
     text-align: center;
     justify-content: center;
 
     &::after {
       content: "";
       position: absolute;
-      top: -50px;
+      top: -32px;
       left: 0;
       right: 0;
       margin: 0 auto;
@@ -45,6 +57,7 @@
 
     .catalog_order-button {
       width: 100%;
+      font-size: 16px;
     }
   }
 }
@@ -68,7 +81,7 @@
   font-family: $main-font;
   color: $color-font;
   max-width: 100px;
-  margin-top: 20px;
+  margin-top: 22px;
   margin-bottom: 10px;
   line-height: 20px;
   text-transform: uppercase;
@@ -83,6 +96,10 @@
   font-family: $secondary-font;
 }
 
+.catalog__spec-value {
+  text-align: right;
+}
+
 // .catalog__spec-field {}
 
 // .catalog__spec-value {}
@@ -91,19 +108,30 @@
 
 .catalog__show-all-descr {
   font-size: $font-small;
-  margin-bottom: 23px;
+  font-family: $secondary-font;
+  margin-bottom: 20px;
+  margin-top: -2px;
 }
 
 .catalog__order-button {
   width: 100%;
+  font-size: 16px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    margin-top: 61px;
+    padding-top: 0;
+    margin-bottom: 27px;
+    font-size: 60px;
+  }
+
   .catalog__item {
     background-color: $gray-light;
     width: 325px;
     height: 430px;
     position: relative;
+    margin-bottom: 0;
     margin-top: 140px;
     flex-direction: column;
     align-items: center;
@@ -111,10 +139,38 @@
     padding-top: 160px;
     justify-content: space-between;
     margin-right: 60px;
+
+    &::after {
+      content: none;
+    }
+
+    &--show-all {
+      background-color: white;
+      border: 1px solid $gray-light;
+
+      &::after {
+        content: "";
+        top: 52px;
+        width: 60px;
+        height: 60px;
+      }
+
+      .catalog__item-title {
+        max-width: 60%;
+      }
+    }
+  }
+
+  .catalog__show-all-descr {
+    font-size: 16px;
+    margin-bottom: 75px;
+    max-width: 70%;
+    line-height: 19px;
   }
 
   .catalog__image {
     position: absolute;
+    padding: 0;
     height: 190px;
     width: 190px;
     top: -50px;
@@ -124,16 +180,42 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    // justify-content: space-between;
     margin-right: -80px;
   }
 
-  .catalog__title {
-    font-size: 60px;
+  .catalog__item-title {
+    max-width: 60%;
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    margin-bottom: 17px;
+  }
+
+  .catalog__item-description {
+    width: 100%;
+  }
+
+  .catalog__item-spec {
+    font-size: 16px;
+
+    td {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    tr {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .catalog__spec-value {
+    text-align: right;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .catalog__list {
     display: flex;
     flex-direction: row;
@@ -142,12 +224,54 @@
     margin-right: -80px;
   }
 
+  .catalog__title {
+    margin-top: 73px;
+    padding-top: 0;
+    margin-bottom: 22px;
+  }
+
   .catalog__item {
     background-color: $gray-light;
     width: 245px;
-    margin-top: 140px;
+    margin-top: 143px;
     padding: 40px;
     padding-top: 160px;
+    padding-bottom: 37px;
     margin-right: 80px;
+
+    &--show-all {
+      background-color: white;
+      border: 1px solid $gray-light;
+
+      &::after {
+        content: "";
+        top: 52px;
+        width: 60px;
+        height: 60px;
+      }
+
+      .catalog__item-title {
+        max-width: 100%;
+        margin: 0;
+        margin-top: 4px;
+        margin-bottom: 13px;
+      }
+    }
+  }
+
+  .catalog__show-all-descr {
+    max-width: 105%;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .catalog__item-title {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    font-size: 20px;
+    text-align: center;
   }
 }

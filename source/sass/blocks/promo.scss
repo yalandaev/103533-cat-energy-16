@@ -1,5 +1,6 @@
 .promo {
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  // background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  // background-size: 100%;
   font-family: $main-font;
   color: white;
   text-align: center;
@@ -11,12 +12,14 @@
   font-weight: 400;
   font-size: $font-huge;
   line-height: 1;
+  margin-top: 3px;
 }
 
 .promo__subtitle {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 26px;
 }
 
 .promo__image {
@@ -25,67 +28,67 @@
 
 // .promo__button {}
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo {
     background: none;
     color: black;
     text-align: left;
-    padding-top: 25px;
-    margin-bottom: 20px;
-    padding-left: 90px;
-    min-height: 940px;
+    padding-top: 60px;
+    margin-bottom: 35px;
+    padding-left: 88px;
+    min-height: 838px;
   }
 
   .promo__title {
     max-width: 520px;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
     font-size: 60px;
   }
 
   .promo__subtitle {
     font-size: 20px;
     line-height: 1;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 
   .promo__image {
     position: absolute;
-    left: 0;
-    top: 210px;
+    top: 252px;
     z-index: -1;
     width: 620px;
+    right: 30px;
+    margin: 0 auto;
   }
 
   .promo__button.button {
     font-size: 20px;
     width: auto;
-    padding: 16px 27px;
+    padding: 14px 28px;
     display: inline-block;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .promo {
     min-height: 470px;
+    padding-left: 80px;
+    padding-top: 104px;
+    margin-bottom: 191px;
 
     &::after {
       content: "";
-      background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-      background-position: 100% 0%;
-      background-size: 100%;
-      width: 50%;
-      height: 50%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
+      background: none;
     }
   }
 
   .promo__image {
-    left: 525px;
-    top: -70px;
+    left: 290px;
+    top: 26px;
     z-index: 0;
-    width: 400px;
+    width: 515px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 52px;
   }
 }
