@@ -170,10 +170,12 @@
 
   .catalog__image {
     position: absolute;
-    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
     height: 190px;
-    width: 190px;
-    top: -50px;
+    width: 325px;
+    max-width: 325px;
+    top: -60px;
   }
 
   .catalog__list {
@@ -273,5 +275,12 @@
     max-width: 100%;
     font-size: 20px;
     text-align: center;
+  }
+
+  .catalog__image {
+    height: 190px;
+    width: 245px;
+    max-width: 245px;
+    top: -60px;
   }
 }
