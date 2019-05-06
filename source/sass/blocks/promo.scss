@@ -53,15 +53,16 @@
 
   .promo__image {
     position: absolute;
-    top: 252px;
+    top: 265px;
     z-index: -1;
-    width: 620px;
+    width: 705px;
     right: 30px;
     margin: 0 auto;
   }
 
   .promo__button.button {
     font-size: 20px;
+    line-height: 24px;
     width: auto;
     padding: 14px 28px;
     display: inline-block;
@@ -82,10 +83,10 @@
   }
 
   .promo__image {
-    left: 290px;
+    left: 260px;
     top: 26px;
     z-index: 0;
-    width: 515px;
+    width: 550px;
   }
 
   .promo__subtitle {
