@@ -9,7 +9,6 @@
 }
 
 .program-form__field {
-  display: flex;
   position: relative;
   display: flex;
   align-items: center;
@@ -20,7 +19,6 @@
   font-size: 16px;
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
-  color: #111111;
   flex-shrink: 0;
   margin-right: 15px;
   text-transform: uppercase;
@@ -41,7 +39,6 @@
   width: 100%;
   border: 1px solid #e6e6e6;
   padding: 13px 15px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
@@ -55,7 +52,6 @@
   font-size: 16px;
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
-  color: #111111;
   position: relative;
   padding-left: 45px;
   padding-top: 10px;
@@ -92,8 +88,9 @@
     transition: 0.3s;
   }
 }
+
 @media (min-width: $tablet-width) {
-  .program-form__additional>.program-form__row {
+  .program-form__additional > .program-form__row {
     flex-wrap: wrap;
     flex-direction: row;
   }
@@ -105,6 +102,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .program-form__row {
     flex-direction: row;
