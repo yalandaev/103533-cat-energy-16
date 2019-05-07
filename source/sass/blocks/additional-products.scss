@@ -1,5 +1,5 @@
 .additional-products {
-  padding: 20px 20px;
+  // padding: 20px 20px;
   padding-top: 30px;
   overflow: hidden;
 }
@@ -62,8 +62,124 @@
     background: $color-main;
     z-index: -1;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 3px;
+    margin-top: 2px;
+    background: $color-main;
+    z-index: -1;
+    right: 0;
+  }
 }
-// @media (min-width: $tablet-width) {
-// }
-// @media (min-width: $desktop-width) {
-// }
+@media (min-width: $tablet-width) {
+  .additional-products__title {
+    font-size: 36px;
+    margin-left: 0;
+    margin-bottom: 78px;
+  }
+
+  .additional-products {
+    overflow: visible;
+    padding-top: 73px;
+    margin-bottom: 50px;
+  }
+
+  .additional-products__item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 37px;
+    padding-top: 13px;
+  }
+
+  .additional-products__list {
+    border: 1px solid #d9d9d9;
+    border-bottom: 0;
+  }
+
+  .additional-products__spec {
+    flex-basis: 50%;
+    justify-content: flex-end;
+  }
+
+  .additional-products__order-button {
+    flex-basis: 100%;
+  }
+
+  .additional-products__volume {
+    margin-right: 50px;
+  }
+
+  .additional-products__item-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+
+  .additional-products__column {
+    &--md6 {
+      flex-basis: 50%;
+    }
+    &--md12 {
+      flex-basis: 100%;
+    }
+  }
+
+}
+@media (min-width: $desktop-width) {
+  .additional-products__item {
+    flex-wrap: nowrap;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+
+  .additional-products__row {
+    display: flex;
+    flex-direction: row;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
+  .additional-products__list {
+    flex-basis: 75%;
+    max-width: 75%;
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .additional-products__title {
+    margin-left: -40px;
+  }
+
+  .additional-products__order-button {
+    flex-basis: 27.5%;
+  }
+
+  .additional-products__spec {
+    justify-content: space-between;
+  }
+
+  .additional-products__column {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .additional-products__item-row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px;
+    margin-right: -40px;
+    flex-grow: 1;
+    align-items: center;
+  }
+}

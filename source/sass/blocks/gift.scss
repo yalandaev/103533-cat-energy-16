@@ -35,11 +35,35 @@
 @media (min-width: $tablet-width) {
   .gift__container {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 90px;
+    min-height: 200px;
+  }
+
+  .gift__text {
+    text-align: left;
+    margin-right: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gift__container {
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+    flex-direction: column;
+    min-height: 290px;
+    padding: 45px 10px;
+  }
+
+  .gift {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .gift__text {
+    text-align: center;
+    margin-right: 0;
   }
 }

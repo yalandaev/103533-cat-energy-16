@@ -1,5 +1,122 @@
-// //
-// @media (min-width: $tablet-width) {
-// }
-// @media (min-width: $desktop-width) {
-// }
+.program-form__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.program-form__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.program-form__field {
+  display: flex;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.program-form__label {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  flex-shrink: 0;
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.program-form__comments {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 14px 13px;
+  height: 151px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.program-form__input {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 13px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.program-form__check-type {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  position: relative;
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #222222;
+
+  &--radio {
+    &::after {
+      border-radius: 50%;
+    }
+  }
+
+  &::before {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #68b738;
+    margin-top: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d9d9d9;
+    transition: 0.3s;
+  }
+}
+@media (min-width: $tablet-width) {
+  .program-form__additional>.program-form__row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .program-form__column {
+    &--x4 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .program-form__row {
+    flex-direction: row;
+  }
+
+  .program-form__column {
+    flex: 0 0 50%;
+    max-width: 50%;
+
+    &--x4 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+}
