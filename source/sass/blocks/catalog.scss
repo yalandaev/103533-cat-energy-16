@@ -129,7 +129,7 @@
   .catalog__item {
     background-color: $gray-light;
     width: 325px;
-    height: 430px;
+    min-height: 430px;
     position: relative;
     margin-bottom: 0;
     margin-top: 140px;
@@ -201,6 +201,7 @@
 
   .catalog__item-spec {
     font-size: 16px;
+    margin-bottom: 10px;
 
     td {
       padding-top: 8px;
