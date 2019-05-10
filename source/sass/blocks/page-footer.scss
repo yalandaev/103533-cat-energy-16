@@ -16,6 +16,11 @@
   margin: 0 auto;
   padding-top: 9px;
   padding-bottom: 28px;
+
+  &:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
 }
 // .page-footer__page-footer__social {}
 
@@ -61,6 +66,12 @@
 
 .page-footer__logo {
   margin-right: -5px;
+  fill: #666666;
+
+  &:hover {
+      fill: #68b738;
+      transition: 0.3s;
+    }
 }
 
 @media (min-width: $tablet-width) {

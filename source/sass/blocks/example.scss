@@ -198,8 +198,10 @@
   .example__slider {
     position: relative;
     display: flex;
-    max-width: inherit;
     height: 560px;
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .example__toggle-block {

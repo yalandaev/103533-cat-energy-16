@@ -5,6 +5,7 @@
   text-transform: uppercase;
   border: none;
   text-align: center;
+  transition: 0.3s;
 
   &--burger {
     background: url("../img/icon-mobile-menu.svg") no-repeat;
@@ -13,10 +14,18 @@
     padding: 9px 12px;
   }
 
+  &--burger-close {
+    background: url("../img/icon-close.svg") no-repeat;
+  }
+
   &--green {
     background-color: $color-main;
     color: white;
     text-decoration: none;
+
+    &:hover {
+      background: #5eaa2f;
+    }
   }
 
   &--gray {

@@ -16,6 +16,11 @@
 
   .social__icon {
     fill: #666666;
+
+    &:hover {
+      fill: #68b738;
+      transition: 0.3s;
+    }
   }
 
   // &__button {
