@@ -6,7 +6,7 @@ var navigation = document.querySelector('.main-nav');
 navigation.classList.remove('main-nav--no-js');
 toogleMenu.classList.remove('page-header__toggle--no-js');
 
-toogleMenu.addEventListener('click', function() {
-  toogleMenu.classList.toggle('page-header__toggle--close');
+toogleMenu.addEventListener('click', function () {
+  toogleMenu.classList.toggle('button--burger-close');
   navigation.classList.toggle('main-nav--open');
 });
