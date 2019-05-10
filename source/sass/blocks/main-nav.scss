@@ -5,7 +5,13 @@
   &--open {
     display: initial;
   }
+
+  &--no-js {
+    display: initial;
+  }
 }
+
+
 
 @media (min-width: $tablet-width) {
   .main-nav {

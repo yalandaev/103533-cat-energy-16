@@ -32,7 +32,9 @@
 
 // .additional-products__volume {}
 
-// .additional-products__price {}
+.additional-products__price {
+  text-transform: capitalize;
+}
 
 // .additional-products__order-button {}
 

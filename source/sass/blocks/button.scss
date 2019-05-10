@@ -14,6 +14,10 @@
     padding: 9px 12px;
   }
 
+  &--burger-no-js {
+    display: none;
+  }
+
   &--burger-close {
     background: url("../img/icon-close.svg") no-repeat;
   }

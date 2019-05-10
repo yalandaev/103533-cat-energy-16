@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -17,8 +19,8 @@
               <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat Energy">
             </picture>
           </a>
-          <button class="button button--burger page-header__toggle" type="button"></button>
-          <nav class="main-nav">
+          <button class="button button--burger button--burger-no-js page-header__toggle" type="button"></button>
+          <nav class="main-nav main-nav--no-js">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active site-list__item--active-white">
                 <a>Главная</a>
@@ -48,7 +50,7 @@
               <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
               <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Продукт">
             </picture>
-            <a href="catalog.html" class="promo__button button button--green">Подобрать программу</a>
+            <a href="form.html" class="promo__button button button--green">Подобрать программу</a>
         </section>
         </div>
       <section class="programs">

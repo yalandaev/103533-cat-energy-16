@@ -76,6 +76,7 @@
     padding-top: 104px;
     margin-bottom: 191px;
 
+
     &::after {
       content: "";
       background: none;
@@ -91,5 +92,6 @@
 
   .promo__subtitle {
     margin-bottom: 52px;
+    max-width: 40%;
   }
 }

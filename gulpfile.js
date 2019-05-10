@@ -2,18 +2,17 @@
 
 var gulp = require("gulp");
 var del = require("del");
-const webp = require('gulp-webp');
+const webp = require("gulp-webp");
 var posthtml = require("gulp-posthtml");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var svgSprite = require('gulp-svg-sprite');
+var svgSprite = require("gulp-svg-sprite");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
-const filter = require('gulp-filter');
 
 gulp.task("copy", function() {
   return gulp.src([
@@ -52,8 +51,8 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task('svgsprite', function () {
-  return gulp.src('source/img/*.svg')
+gulp.task("svgsprite", function () {
+  return gulp.src("source/img/*.svg")
     .pipe(svgSprite({
       mode: {
         stack: {
@@ -62,13 +61,13 @@ gulp.task('svgsprite', function () {
       },
     }
     ))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest("build/img"));
 });
 
-gulp.task('webp', () =>
-  gulp.src('source/img/*.{png,jpg}')
+gulp.task("webp", () =>
+  gulp.src("source/img/*.{png,jpg}")
     .pipe(webp({ quality: 80, lossless: true }))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest("build/img"))
 );
 // //webp options: https://github.com/imagemin/imagemin-webp#imageminwebpoptions
 
