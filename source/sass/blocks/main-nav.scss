@@ -3,11 +3,11 @@
   display: none;
 
   &--open {
-    display: initial;
+    display: block;
   }
 
   &--no-js {
-    display: initial;
+    display: block;
   }
 }
 
