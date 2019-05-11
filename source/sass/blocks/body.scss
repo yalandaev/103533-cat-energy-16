@@ -3,10 +3,6 @@ html {
   counter-reset: how-works-counter;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 *,
 *::before,
 *::after {
@@ -14,6 +10,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-weight: 400;
   font-size: 14px;
   font-family: $main-font;
