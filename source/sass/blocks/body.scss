@@ -9,6 +9,10 @@ html {
   box-sizing: inherit;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   overflow-x: hidden;
   font-weight: 400;
