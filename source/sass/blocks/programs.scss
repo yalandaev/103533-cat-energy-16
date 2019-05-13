@@ -100,10 +100,13 @@
   }
 
   .programs__item {
-    padding: 77px 315px 59px 52px;
-    // height: 372px;
+    padding: 77px 283px 59px 52px;
     margin-bottom: 30px;
     min-height: 372px;
+
+    &--pro {
+      padding-right: 314px;
+    }
   }
 
   .programs__catalog-link {
@@ -118,8 +121,8 @@
 
     &--slim {
       width: 100%;
-      height: 100%;
-      top: 40%;
+      height: 98%;
+      top: 43%;
     }
 
     &--pro {

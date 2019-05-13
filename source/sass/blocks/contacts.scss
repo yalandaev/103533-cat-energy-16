@@ -64,7 +64,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    background: none;
+    // background: none;
   }
 
   .contacts__subtitle {
@@ -91,8 +91,17 @@
     }
   }
 
+  .contacts__map-container {
+    height: 397px;
+  }
+
   .contacts__map {
-    height: 400px;
+    height: 397px;
+  }
+
+  .contacts__map-static {
+    height: 397px;
+    width: 768px;
   }
 
   .contacts__map-static {
