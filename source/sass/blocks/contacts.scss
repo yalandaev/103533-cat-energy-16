@@ -3,7 +3,7 @@
   background: white;
 
   &--color {
-    background-color: #f2f2f2;
+    background-color: $gray-light;
   }
 }
 
@@ -53,7 +53,7 @@
 .contacts__map-static {
   position: absolute;
   z-index: 0;
-  left: calc((100% - 320px)/2);
+  left: calc((100% - 320px) / 2);
   top: 113px;
   height: 363px;
 }
@@ -102,10 +102,7 @@
   .contacts__map-static {
     height: 397px;
     width: 768px;
-  }
-
-  .contacts__map-static {
-    left: calc((100% - 768px)/2);
+    left: calc((100% - 768px) / 2);
     top: 200px;
   }
 }
@@ -134,7 +131,7 @@
   }
 
   .contacts__map-static {
-    left: calc((100% - 1440px)/2);
+    left: calc((100% - 1440px) / 2);
     top: 0;
   }
 

@@ -58,7 +58,7 @@
 
     .catalog_order-button {
       width: 100%;
-      font-size: 16px;
+      font-size: $font-medium;
     }
   }
 }
@@ -116,7 +116,7 @@
 
 .catalog__order-button {
   width: 100%;
-  font-size: 16px;
+  font-size: $font-medium;
   margin-top: -3px;
 }
 
@@ -164,7 +164,7 @@
   }
 
   .catalog__show-all-descr {
-    font-size: 16px;
+    font-size: $font-medium;
     margin-bottom: 75px;
     max-width: 70%;
     line-height: 19px;
@@ -202,7 +202,7 @@
   }
 
   .catalog__item-spec {
-    font-size: 16px;
+    font-size: $font-medium;
     margin-bottom: 10px;
 
     td {

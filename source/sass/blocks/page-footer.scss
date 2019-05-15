@@ -70,9 +70,9 @@
   fill: #666666;
 
   &:hover {
-      fill: #68b738;
-      transition: 0.3s;
-    }
+    fill: $color-main;
+    transition: 0.3s;
+  }
 }
 
 @media (min-width: $tablet-width) {

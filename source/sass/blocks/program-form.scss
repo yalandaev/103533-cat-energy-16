@@ -28,9 +28,9 @@
 }
 
 .program-form__label {
-  font-size: 16px;
+  font-size: $font-medium;
   font-weight: 400;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   flex-shrink: 0;
   margin-right: 15px;
   text-transform: uppercase;
@@ -42,9 +42,9 @@
   border: 1px solid #e6e6e6;
   padding: 14px 13px;
   height: 151px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: $font-medium;
   margin-bottom: 28px;
   margin-top: 1px;
   transition: 0.3s;
@@ -53,8 +53,9 @@
     border: 1px solid #cdcdcd;
   }
 
-  &:active, &:focus {
-    border: 1px solid #444444;
+  &:active,
+  &:focus {
+    border: 1px solid $gray;
     outline: none;
   }
 }
@@ -67,7 +68,7 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $secondary-font;
 }
 
 .program-form__input {
@@ -75,10 +76,10 @@
   border: 1px solid #e6e6e6;
   padding: 13px 15px;
   transition: 0.3s;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   text-transform: uppercase;
-  color: #444444;
-  font-size: 16px;
+  color: $gray;
+  font-size: $font-medium;
   line-height: 18px;
 
   &--icon {
@@ -91,42 +92,35 @@
 
   &:active {
     border: 1px solid #cdcdcd;
-  }
+    outline: 2px solid $gray;
 
-  &:active {
-    outline: 2px solid #444444;
-
-    &~svg {
-      fill: #68b738;
+    & ~ svg {
+      fill: $color-main;
     }
   }
 
   &:focus {
-    outline: 2px solid #444444;
-    &~svg {
-      fill: #68b738;
+    outline: 2px solid $gray;
+
+    & ~ svg {
+      fill: $color-main;
     }
 
     &:invalid {
       outline: 2px solid #ff8282;
 
-      &~svg {
-      fill: #ff8282;
-    }
+      & ~ svg {
+        fill: #ff8282;
+      }
     }
   }
 }
 
-.form-field__control:active ~ svg, .form-field__control:focus ~ svg {
-
-}
-
-
 .program-form__check-type {
   display: block;
-  font-size: 16px;
+  font-size: $font-medium;
   font-weight: 400;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   position: relative;
   padding-left: 45px;
   padding-top: 10px;
@@ -157,7 +151,7 @@
       height: 12px;
       border-radius: 50%;
       border: none;
-      background: #68b738;
+      background: $color-main;
       margin-top: 0;
       left: 9px;
     }
@@ -169,8 +163,8 @@
     position: absolute;
     top: 50%;
     width: 12px;
-    border-right: 1px solid #68b738;
-    border-bottom: 1px solid #68b738;
+    border-right: 1px solid $color-main;
+    border-bottom: 1px solid $color-main;
     transform: translateY(-50%) rotate(45deg);
   }
 
@@ -213,11 +207,10 @@ input[type="radio"]:checked + label::before {
 
 .program-form__description {
   text-transform: uppercase;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   margin-bottom: 38px;
-  margin-top: 0;
   max-width: 270px;
-  color: #111111;
+  color: $color-font;
   margin-top: -4px;
 }
 
@@ -245,10 +238,6 @@ input[type="radio"]:checked + label::before {
   .program-form__additional > .program-form__row {
     flex-wrap: wrap;
     flex-direction: row;
-  }
-
-  .program-form__check-type {
-    font-size: 20px;
   }
 
   .program-form__label {
@@ -331,6 +320,7 @@ input[type="radio"]:checked + label::before {
 
   .program-form__check-type {
     padding-left: 62px;
+    font-size: 20px;
 
     &--checkbox {
       &::before {
@@ -430,7 +420,7 @@ input[type="radio"]:checked + label::before {
     margin-top: 9px;
   }
 
-  .program-form__submit-container>.program-form__column--x4 {
+  .program-form__submit-container > .program-form__column--x4 {
     flex: 0 0 50%;
     max-width: 50%;
   }

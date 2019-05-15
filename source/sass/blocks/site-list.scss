@@ -45,7 +45,7 @@
         left: 11px;
         right: 0;
         height: 2px;
-        background: #68b738;
+        background: $color-main;
         width: calc(100% - 30px);
       }
     }
@@ -67,6 +67,12 @@
     padding-top: 27px;
     transition: 0.3s;
 
+    &--active-white {
+      &::after {
+        background: white;
+      }
+    }
+
     &:hover {
       opacity: 0.6;
     }
@@ -80,14 +86,6 @@
   .site-list--no-background .site-list__item {
     a {
       color: black;
-    }
-  }
-
-  .site-list__item {
-    &--active-white {
-      &::after {
-        background: white;
-      }
     }
   }
 }
