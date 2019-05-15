@@ -46,7 +46,10 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    line-height: 20px;
+
+    &--fat {
+      line-height: 32px;
+    }
 
     &--burger {
       display: none;

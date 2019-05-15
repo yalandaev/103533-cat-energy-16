@@ -144,5 +144,13 @@
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 50px;
+
+    &::after {
+      left: 155px;
+    }
+  }
+
+  .how-works {
+    padding-top: 32px;
   }
 }

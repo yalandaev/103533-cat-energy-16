@@ -73,6 +73,19 @@
   .title {
     margin-top: 20px;
     margin-bottom: 57px;
+
+    &--wide {
+      &.title--line {
+        &::after {
+          top: 50%;
+        }
+      }
+    }
+
+    &--line {
+      font-size: 36px;
+      padding-right: 41px;
+    }
   }
 }
 
