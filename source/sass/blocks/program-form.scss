@@ -187,13 +187,8 @@
   }
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  display: none;
-}
-
-input[type="checkbox"]:checked + label::before,
-input[type="radio"]:checked + label::before {
+input[type="checkbox"]:checked + .program-form__check-type::before,
+input[type="radio"]:checked + .program-form__check-type::before {
   display: block;
 }
 
