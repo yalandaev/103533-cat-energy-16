@@ -37,13 +37,16 @@ gulp.task("css", function () {
     .pipe(sass({
       includePaths: require('node-normalize-scss').includePaths
     }))
-    .pipe(postcss([ autoprefixer() ]))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
+
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
@@ -84,5 +87,6 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html")).on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("server"));
 gulp.task("build", gulp.series("clean", "copy", "html", "css", "svgsprite", "webp"));
+gulp.task("start", gulp.series("build", "server"));
+

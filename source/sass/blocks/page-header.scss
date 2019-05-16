@@ -27,6 +27,14 @@
   padding-top: 2px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header--with-background {
+    &::after {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     border-bottom: 0;
@@ -70,6 +78,14 @@
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
+  .page-header--with-background {
+    &::after {
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 }
