@@ -32,7 +32,7 @@
   .page-main {
     position: initial;
 
-    &--with-background{
+    &--with-background {
       &::after {
         content: "";
         background: none;
