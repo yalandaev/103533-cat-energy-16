@@ -138,6 +138,10 @@
       margin-top: -3px;
       left: 9px;
     }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--radio {
@@ -154,6 +158,16 @@
       background: $color-main;
       margin-top: 0;
       left: 9px;
+    }
+
+    &:hover {
+      &::after {
+        border: 1px solid #bfbfbf;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

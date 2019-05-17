@@ -21,27 +21,11 @@
       fill: $color-main;
       transition: 0.3s;
     }
+
+    &:active {
+      opacity: 0.4;
+    }
   }
-
-  // &__button {
-
-  //   // &--vk {}
-
-  //   // &--insta {}
-
-  //   // &--fb {}
-
-  // }
-
-  // &__icon {
-
-  //   // &--vk {}
-
-  //   // &--insta {}
-
-  //   // &--fb {}
-
-  // }
 }
 
 @media (min-width: $tablet-width) {
