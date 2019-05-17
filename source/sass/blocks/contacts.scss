@@ -131,8 +131,9 @@
   }
 
   .contacts__map-static {
-    left: calc((100% - 1440px) / 2);
+    left: calc((100% - 1300px) / 2);
     top: 0;
+    width: 1300px;
   }
 
   .contacts__map-container {
