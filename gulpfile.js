@@ -30,6 +30,27 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+// Этот таск позволяет преобразовать scss в css, минифицировать и оставить работающие css.map от минифицированного кода до scss за один прогон, но вызывает ошибку
+// Plumber found unhandled error: TypeError in plugin "gulp-csso" Message: Cannot read property 'isEmpty' of undefined
+// Впрочем, несмотря на эту ошибку, всё работает корректно
+//
+// gulp.task("css", function () {
+//   return gulp.src("source/sass/style.scss")
+//     .pipe(plumber())
+//     .pipe(sourcemap.init())
+//     .pipe(sass({
+//       includePaths: require('node-normalize-scss').includePaths
+//     }))
+//     .pipe(postcss([autoprefixer()]))
+//     .pipe(sourcemap.write("."))
+//     .pipe(gulp.dest("build/css"))
+//     .pipe(csso())
+//     .pipe(rename("style.min.css"))
+//     .pipe(sourcemap.write("."))
+//     .pipe(gulp.dest("build/css"))
+//     .pipe(server.stream());
+// });
+
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -40,13 +61,23 @@ gulp.task("css", function () {
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("css-min", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass({
+      includePaths: require('node-normalize-scss').includePaths
+    }))
+    .pipe(postcss([autoprefixer()]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
-
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
@@ -83,9 +114,9 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "css-min"));
   gulp.watch("source/*.html", gulp.series("html")).on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "html", "css", "svgsprite", "webp"));
+gulp.task("build", gulp.series("clean", "copy", "html", "css", "css-min", "webp", "svgsprite"));
 gulp.task("start", gulp.series("build", "server"));
