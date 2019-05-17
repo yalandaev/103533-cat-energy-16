@@ -31,14 +31,6 @@
   padding-top: 2px;
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .page-header--with-background {
-    &::after {
-      background-image: url("../img/index-background-mobile@2x.jpg");
-    }
-  }
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
     border-bottom: 0;
@@ -66,30 +58,34 @@
     padding-top: 3px;
   }
 
-  .page-header--with-background {
-    &::after {
-      content: "";
-      z-index: -1;
-      display: block;
-      width: 50%;
-      min-height: 696px;
-      top: 0;
-      right: 0;
-      left: inherit;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-color: #63a73a;
-      background-position: 0%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
+  .page-header {
+    &--with-background {
+      &::after {
+        content: "";
+        z-index: -1;
+        display: block;
+        width: 50%;
+        min-height: 696px;
+        top: 0;
+        right: 0;
+        left: inherit;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-color: #63a73a;
+        background-position: 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+      }
     }
   }
 }
 
 @media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
-  .page-header--with-background {
-    &::after {
-      background-image: url("../img/index-background-desktop@2x.jpg");
+  .page-header {
+    &--with-background {
+      &::after {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
